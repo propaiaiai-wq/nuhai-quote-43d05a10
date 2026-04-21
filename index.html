@@ -366,21 +366,32 @@ a{color:var(--accent);text-decoration:none}
   .ct{min-width:640px}
 }
 
-/* ── Mobile (stack all pages, hide tab nav) ──────────────────────── */
+/* ── Mobile (tabs kept, swipeable horizontally; one page per view) ─ */
 @media (max-width:720px){
   html,body{overflow-x:hidden}
   body{font-size:12.5px}
 
-  /* Hide tabs on mobile — pages stack and scroll naturally */
-  #tabs{padding:0 16px;height:48px;gap:10px;flex-wrap:nowrap}
-  #tabs .tab,#tabs .tab-print{display:none}
-  .tab-logo-img{height:18px;max-width:90px;margin-right:0}
+  /* Tabs: horizontal scroll, single row, preserved navigation */
+  #tabs{
+    padding:0 14px;height:52px;gap:0;flex-wrap:nowrap;
+    overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  #tabs::-webkit-scrollbar{display:none}
+  .tab-logo-img{height:18px;max-width:88px;margin-right:12px;flex-shrink:0}
+  .tab{
+    padding:0 12px;height:52px;font-size:9px;letter-spacing:2.5px;
+    flex-shrink:0;
+  }
+  .tab-print{
+    margin-left:8px;padding:6px 10px;font-size:8px;letter-spacing:2px;
+    flex-shrink:0;
+  }
 
-  /* Show every page stacked */
-  .page{display:block!important;padding-top:0}
-  .page:first-of-type{padding-top:48px}
-  .page:not(:first-of-type) .q-wrap,
-  .page:not(:first-of-type) .comp-wrap{padding-top:12px;border-top:1px solid var(--line)}
+  /* One page at a time — same as desktop */
+  .page{display:none;padding-top:52px}
+  .page.on{display:block}
 
   .q-wrap,.comp-wrap{padding:28px 18px 40px;max-width:100%}
 
