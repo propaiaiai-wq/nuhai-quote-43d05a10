@@ -177,15 +177,13 @@ a{color:var(--accent);text-decoration:none}
   letter-spacing:3px;text-transform:uppercase;margin-bottom:14px;
 }
 .tier-a{background:var(--gray20);border:1px solid var(--gray20);color:var(--gray)}
-.tier-b{background:var(--accent10);border:1px solid var(--accent20);color:var(--accent)}
-.tier-c{
+.tier-b{
   background:var(--accent10);border:1px solid var(--accent35);color:var(--accent);
   box-shadow:0 0 16px rgba(79,201,201,0.18);
 }
 .dot{width:6px;height:6px;border-radius:50%}
 .tier-a .dot{background:var(--gray)}
-.tier-b .dot{background:var(--accent);box-shadow:0 0 6px var(--accent)}
-.tier-c .dot{background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.tier-b .dot{background:var(--accent);box-shadow:0 0 10px var(--accent)}
 
 .q-big-title{
   font-family:var(--font-head);font-size:clamp(28px,4.2vw,48px);font-weight:200;
@@ -207,8 +205,7 @@ a{color:var(--accent);text-decoration:none}
   padding:24px 24px 22px;position:relative;
 }
 .tier-card-a{border-left:3px solid var(--gray)}
-.tier-card-b{border-left:3px solid var(--accent)}
-.tier-card-c{
+.tier-card-b{
   border-left:3px solid var(--accent);
   box-shadow:
     0 0 0 1px var(--accent20),
@@ -220,10 +217,8 @@ a{color:var(--accent);text-decoration:none}
 }
 .tier-card-a .tc-badge{color:var(--gray)}
 .tier-card-b .tc-badge{color:var(--accent)}
-.tier-card-c .tc-badge{color:var(--accent)}
 .tier-card-a .tc-badge .dot{background:var(--gray)}
-.tier-card-b .tc-badge .dot{background:var(--accent);box-shadow:0 0 6px var(--accent)}
-.tier-card-c .tc-badge .dot{background:var(--accent);box-shadow:0 0 10px var(--accent)}
+.tier-card-b .tc-badge .dot{background:var(--accent);box-shadow:0 0 10px var(--accent)}
 .tc-price{
   font-family:var(--font-head);font-size:40px;font-weight:200;color:var(--text);
   line-height:1;letter-spacing:-0.03em;
@@ -240,8 +235,7 @@ a{color:var(--accent);text-decoration:none}
   font-family:var(--font-head);font-size:52px;font-weight:200;line-height:1;letter-spacing:-0.04em;
 }
 .tier-card-a .tc-big-number{color:var(--gray)}
-.tier-card-b .tc-big-number{color:var(--accent);text-shadow:0 0 20px var(--accent35)}
-.tier-card-c .tc-big-number{color:var(--accent);text-shadow:0 0 28px var(--accent50)}
+.tier-card-b .tc-big-number{color:var(--accent);text-shadow:0 0 28px var(--accent50)}
 .tc-big-sub{font-family:var(--font-body);font-size:10px;color:var(--text-mut);margin-top:6px;font-weight:300;letter-spacing:0.04em;line-height:1.55}
 .tc-metric{
   display:flex;justify-content:space-between;align-items:center;padding:10px 0;gap:10px;
@@ -323,8 +317,7 @@ a{color:var(--accent);text-decoration:none}
 .ct th{padding:16px 18px;font-family:var(--font-body);font-size:9.5px;font-weight:500;letter-spacing:3px;text-transform:uppercase;border-bottom:1px solid var(--line-mid);text-align:left;background:var(--bg-deep)}
 .ct th:not(:first-child){text-align:center}
 .ct th.ca{color:var(--gray)}
-.ct th.cb{color:var(--accent)}
-.ct th.cc{color:var(--accent);text-shadow:0 0 12px var(--accent35)}
+.ct th.cb{color:var(--accent);text-shadow:0 0 12px var(--accent35)}
 .ct td{padding:14px 18px;font-family:var(--font-body);font-size:11px;border-bottom:1px solid var(--line);vertical-align:middle;font-weight:300;color:var(--text);letter-spacing:0.02em}
 .ct td:not(:first-child){text-align:center}
 .ct td:first-child{color:var(--text-mid)}
@@ -363,7 +356,7 @@ a{color:var(--accent);text-decoration:none}
   .sig{grid-template-columns:1fr;gap:28px}
   /* Comparison table: horizontal scroll */
   .ct-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -24px;padding:0 24px}
-  .ct{min-width:640px}
+  .ct{min-width:560px}
 }
 
 /* ── Mobile (tabs kept, swipeable horizontally; one page per view) ─ */
@@ -444,7 +437,7 @@ a{color:var(--accent);text-decoration:none}
 
   /* Comparison table — horizontal scroll wrapper */
   .ct-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -18px;padding:0 18px 6px;border-radius:0}
-  .ct{min-width:560px;font-size:10.5px}
+  .ct{min-width:480px;font-size:10.5px}
   .ct th,.ct td{padding:12px 14px;font-size:10.5px}
   .ct tr.featured-row td strong{font-size:18px}
 
@@ -472,7 +465,7 @@ a{color:var(--accent);text-decoration:none}
   .ct td{color:#222!important}
   .qmc-v,.pr-name,.p-tl,.tc-big-number,.commit-cell-number,.tg-v,.sig-name{color:#111!important;text-shadow:none!important}
   .qmc-l,.pb-lbl,.pr-note,.p-tn,.tc-big-label,.commit-cell-label,.tg-l,.sec,.sig-lbl,.tc-big-sub{color:#555!important}
-  .q-headline em,.q-big-title em,.p-ta,.commit-cell-featured .commit-cell-number,.tier-card-b .tc-big-number,.tier-card-c .tc-big-number{color:#0a8585!important;text-shadow:none!important}
+  .q-headline em,.q-big-title em,.p-ta,.commit-cell-featured .commit-cell-number,.tier-card-b .tc-big-number{color:#0a8585!important;text-shadow:none!important}
   .logo-img{filter:none!important}
 }
 </style>
@@ -484,7 +477,6 @@ a{color:var(--accent);text-decoration:none}
   <div class="tab on" data-page="summary">Summary</div>
   <div class="tab" data-page="tier-A">Tier A</div>
   <div class="tab" data-page="tier-B">Tier B</div>
-  <div class="tab" data-page="tier-C">Tier C</div>
   <div class="tab" data-page="compare">Comparison</div>
   <div class="tab" data-page="terms">Terms</div>
   <button class="tab-print" onclick="window.print()">Print / PDF</button>
@@ -504,12 +496,12 @@ a{color:var(--accent);text-decoration:none}
           <div class="q-to-block">
             <div class="q-to-label">Quotation for</div>
             <div class="q-to-name">Lina Al Sahori &amp; Hadeel Barqawi</div>
-            <div class="q-to-meta">Joint Low-Ticket Off-Plan Campaign<br>Quote date: 21 Apr 2026</div>
+            <div class="q-to-meta">Joint Low-Ticket Off-Plan Campaign<br>Quote date: 26 Apr 2026</div>
           </div>
         </div>
 
         <h1 class="q-headline">Dubai off-plan buyers<br>on your <em>sheet</em>, every week.</h1>
-        <p class="q-intro">A 30-day Meta campaign run under Nuhai's brand, promoting <strong>Binghatti</strong> and <strong>Samana</strong> entry-ticket inventory to a targeted Dubai and GCC buyer pool. Every lead we deliver has been filtered for a valid phone, a matching budget, and uniqueness before it hits your sheet, so you spend your time on buyers worth calling.</p>
+        <p class="q-intro">A 30-day Meta campaign run under Nuhai's brand, promoting <strong>Binghatti</strong> entry-ticket inventory to a targeted Dubai and GCC buyer pool. Every lead we deliver has been filtered for a valid phone, a matching budget, and uniqueness before it hits your sheet, so you spend your time on buyers worth calling.</p>
 
         <div class="q-meta-row q-meta-row-3">
           <div class="qmc"><div class="qmc-l">Flight</div><div class="qmc-v">30 days</div></div>
@@ -521,7 +513,19 @@ a{color:var(--accent);text-decoration:none}
         <div class="tier-cards">
           
               <div class="tier-card tier-card-a">
-                <div class="tc-badge"><span class="dot"></span>Tier A · Calibrate</div>
+                <div class="tc-badge"><span class="dot"></span>Tier A · Pilot</div>
+                <div class="tc-price">AED 20,000<span class="tc-price-sub">/mo</span></div>
+                <div class="tc-scope">Binghatti · 1 ad set</div>
+                <div class="tc-divider"></div>
+                <div class="tc-big-metric">
+                  <div class="tc-big-label">Qualified leads we commit to</div>
+                  <div class="tc-big-number">30</div>
+                  <div class="tc-big-sub">in 30 days · valid phone, budget match, not duplicate</div>
+                </div>
+                <div class="tc-metric"><span>Raw leads expected <em>(all form submissions)</em></span><b>~75</b></div>
+              </div>
+              <div class="tier-card tier-card-b">
+                <div class="tc-badge"><span class="dot"></span>Tier B · Calibrate</div>
                 <div class="tc-price">AED 30,000<span class="tc-price-sub">/mo</span></div>
                 <div class="tc-scope">Binghatti · 2 ad sets</div>
                 <div class="tc-divider"></div>
@@ -531,30 +535,6 @@ a{color:var(--accent);text-decoration:none}
                   <div class="tc-big-sub">in 30 days · valid phone, budget match, not duplicate</div>
                 </div>
                 <div class="tc-metric"><span>Raw leads expected <em>(all form submissions)</em></span><b>~125</b></div>
-              </div>
-              <div class="tier-card tier-card-b">
-                <div class="tc-badge"><span class="dot"></span>Tier B · Run</div>
-                <div class="tc-price">AED 50,000<span class="tc-price-sub">/mo</span></div>
-                <div class="tc-scope">Binghatti · Samana · 4 ad sets</div>
-                <div class="tc-divider"></div>
-                <div class="tc-big-metric">
-                  <div class="tc-big-label">Qualified leads we commit to</div>
-                  <div class="tc-big-number">130</div>
-                  <div class="tc-big-sub">in 30 days · valid phone, budget match, not duplicate</div>
-                </div>
-                <div class="tc-metric"><span>Raw leads expected <em>(all form submissions)</em></span><b>~260</b></div>
-              </div>
-              <div class="tier-card tier-card-c">
-                <div class="tc-badge"><span class="dot"></span>Tier C · Scale</div>
-                <div class="tc-price">AED 75,000<span class="tc-price-sub">/mo</span></div>
-                <div class="tc-scope">Binghatti · Samana · 6 ad sets</div>
-                <div class="tc-divider"></div>
-                <div class="tc-big-metric">
-                  <div class="tc-big-label">Qualified leads we commit to</div>
-                  <div class="tc-big-number">225</div>
-                  <div class="tc-big-sub">in 30 days · valid phone, budget match, not duplicate</div>
-                </div>
-                <div class="tc-metric"><span>Raw leads expected <em>(all form submissions)</em></span><b>~425</b></div>
               </div>
         </div>
 
@@ -569,9 +549,70 @@ a{color:var(--accent);text-decoration:none}
 
     <div class="page" id="pg-tier-A">
       <div class="q-wrap">
-        <div class="q-tier-badge tier-a"><span class="dot"></span>Tier A · Calibrate</div>
+        <div class="q-tier-badge tier-a"><span class="dot"></span>Tier A · Pilot</div>
+        <h1 class="q-big-title"><em>Pilot</em> · AED 20,000 monthly</h1>
+        <div class="q-subtitle">Entry tier. Single Binghatti ad set on Meta. A controlled first run to establish your audience baseline before stepping up the spend.</div>
+
+        <div class="q-meta-row">
+          <div class="qmc"><div class="qmc-l">Monthly investment</div><div class="qmc-v">AED 20,000</div></div>
+          <div class="qmc"><div class="qmc-l">Ad spend to Meta</div><div class="qmc-v">AED 15,000</div></div>
+          <div class="qmc"><div class="qmc-l">Nuhai fee</div><div class="qmc-v">AED 5,000</div></div>
+          <div class="qmc"><div class="qmc-l">Daily ad budget</div><div class="qmc-v">AED 500</div></div>
+        </div>
+
+        <div class="sec">What You Will Receive in 30 Days</div>
+        <div class="commit-grid">
+          <div class="commit-cell">
+            <div class="commit-cell-label">Raw leads expected</div>
+            <div class="commit-cell-number">~75</div>
+            <div class="commit-cell-sub"><strong>Everyone</strong> who submitted the form through your ads. Includes curious scrollers, wrong-number fills, and duplicates.</div>
+          </div>
+          <div class="commit-cell commit-cell-featured">
+            <div class="commit-cell-label">Qualified leads we commit</div>
+            <div class="commit-cell-number">30</div>
+            <div class="commit-cell-sub"><strong>Worth calling</strong>. Valid UAE phone, budget matches the tier's target range, not a duplicate of the last 90 days.</div>
+          </div>
+        </div>
+
+        <div class="sec">Services Included</div>
+        <table class="dt"><tbody>
+          <tr><td>01</td><td>Audience intelligence</td><td>Buyer profiles built from live Dubai market signal, layered with behavioural triggers specific to your developer hooks.</td></tr><tr><td>02</td><td>Creative system</td><td>Multi-angle ad library produced and iterated across the flight. Not a single set-and-forget ad.</td></tr><tr><td>03</td><td>Multilingual copy</td><td>Every ad shipped in English and Arabic, hedged for UAE real-estate advertising rules.</td></tr><tr><td>04</td><td>Compliance layer</td><td>RERA BRN, Trakheesi permit number, escrow disclosure and payment-plan disclaimers built into every ad.</td></tr><tr><td>05</td><td>Meta Business integration</td><td>Server-side tracking (Conversions API), Pixel install, Lead Ads form with qualification fields, Business Manager setup.</td></tr><tr><td>06</td><td>Quality-trained audiences</td><td>Lookalike audiences seeded from qualified leads only, not from raw form fills. Keeps the signal pure.</td></tr><tr><td>07</td><td>Daily optimisation</td><td>Bid, budget, audience and creative tuned every day, not weekly. Lost hours cost leads.</td></tr><tr><td>08</td><td>Lead qualification</td><td>Valid-phone check, budget match, and duplicate filtering before a lead lands in your sheet.</td></tr><tr><td>09</td><td>Real-time delivery</td><td>Qualified leads pushed to your shared sheet the moment they come in.</td></tr><tr><td>10</td><td>Performance reporting</td><td>Weekly brief with lead quality breakdown. Not just volume, so you know what the ads are actually doing.</td></tr>
+        </tbody></table>
+
+        <div class="sec">Monthly Pricing</div>
+        <div class="pb">
+          <div class="pb-hdr">
+            <span class="pb-lbl">Pricing breakdown</span>
+            <span class="pb-lbl">30-day flight</span>
+          </div>
+          <div class="pb-body">
+            <div class="pr">
+              <div><div class="pr-name">Meta ad spend (100% pass-through)</div><div class="pr-note">Goes to Meta, invoiced at cost</div></div>
+              <div class="pr-amt">AED 15,000</div>
+            </div>
+            <div class="pr">
+              <div><div class="pr-name">Nuhai base fee</div><div class="pr-note">Fixed. Systems, compliance, reporting.</div></div>
+              <div class="pr-amt">AED 3,500</div>
+            </div>
+            <div class="pr">
+              <div><div class="pr-name">Ad management (10% of ad spend)</div><div class="pr-note">Scales with optimisation workload</div></div>
+              <div class="pr-amt">AED 1,500</div>
+            </div>
+            <div class="p-div"></div>
+            <div class="p-total-row">
+              <div><div class="p-tl">Monthly total</div><div class="p-tn">No onboarding fee. No hidden costs.</div></div>
+              <div class="p-total-right"><div class="p-ta">AED 20,000</div><div class="p-tp">ad spend plus all Nuhai work</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page" id="pg-tier-B">
+      <div class="q-wrap">
+        <div class="q-tier-badge tier-b"><span class="dot"></span>Tier B · Calibrate</div>
         <h1 class="q-big-title"><em>Calibrate</em> · AED 30,000 monthly</h1>
-        <div class="q-subtitle">Single developer entry tier. Binghatti hook on Meta. A clean benchmark run to establish your audience baseline.</div>
+        <div class="q-subtitle">Single developer with two ad sets. Binghatti hook with multi-angle creative rotation. Enough volume for Meta to optimise into a benchmark cost-per-qualified-lead.</div>
 
         <div class="q-meta-row">
           <div class="qmc"><div class="qmc-l">Monthly investment</div><div class="qmc-v">AED 30,000</div></div>
@@ -628,146 +669,24 @@ a{color:var(--accent);text-decoration:none}
       </div>
     </div>
 
-    <div class="page" id="pg-tier-B">
-      <div class="q-wrap">
-        <div class="q-tier-badge tier-b"><span class="dot"></span>Tier B · Run</div>
-        <h1 class="q-big-title"><em>Run</em> · AED 50,000 monthly</h1>
-        <div class="q-subtitle">Two developer live campaign. Binghatti and Samana hooks running in parallel, with lookalike audience expansion.</div>
-
-        <div class="q-meta-row">
-          <div class="qmc"><div class="qmc-l">Monthly investment</div><div class="qmc-v">AED 50,000</div></div>
-          <div class="qmc"><div class="qmc-l">Ad spend to Meta</div><div class="qmc-v">AED 42,273</div></div>
-          <div class="qmc"><div class="qmc-l">Nuhai fee</div><div class="qmc-v">AED 7,727</div></div>
-          <div class="qmc"><div class="qmc-l">Daily ad budget</div><div class="qmc-v">AED 1,409</div></div>
-        </div>
-
-        <div class="sec">What You Will Receive in 30 Days</div>
-        <div class="commit-grid">
-          <div class="commit-cell">
-            <div class="commit-cell-label">Raw leads expected</div>
-            <div class="commit-cell-number">~260</div>
-            <div class="commit-cell-sub"><strong>Everyone</strong> who submitted the form through your ads. Includes curious scrollers, wrong-number fills, and duplicates.</div>
-          </div>
-          <div class="commit-cell commit-cell-featured">
-            <div class="commit-cell-label">Qualified leads we commit</div>
-            <div class="commit-cell-number">130</div>
-            <div class="commit-cell-sub"><strong>Worth calling</strong>. Valid UAE phone, budget matches the tier's target range, not a duplicate of the last 90 days.</div>
-          </div>
-        </div>
-
-        <div class="sec">Services Included</div>
-        <table class="dt"><tbody>
-          <tr><td>01</td><td>Audience intelligence</td><td>Buyer profiles built from live Dubai market signal, layered with behavioural triggers specific to your developer hooks.</td></tr><tr><td>02</td><td>Creative system</td><td>Multi-angle ad library produced and iterated across the flight. Not a single set-and-forget ad.</td></tr><tr><td>03</td><td>Multilingual copy</td><td>Every ad shipped in English and Arabic, hedged for UAE real-estate advertising rules.</td></tr><tr><td>04</td><td>Compliance layer</td><td>RERA BRN, Trakheesi permit number, escrow disclosure and payment-plan disclaimers built into every ad.</td></tr><tr><td>05</td><td>Meta Business integration</td><td>Server-side tracking (Conversions API), Pixel install, Lead Ads form with qualification fields, Business Manager setup.</td></tr><tr><td>06</td><td>Quality-trained audiences</td><td>Lookalike audiences seeded from qualified leads only, not from raw form fills. Keeps the signal pure.</td></tr><tr><td>07</td><td>Daily optimisation</td><td>Bid, budget, audience and creative tuned every day, not weekly. Lost hours cost leads.</td></tr><tr><td>08</td><td>Lead qualification</td><td>Valid-phone check, budget match, and duplicate filtering before a lead lands in your sheet.</td></tr><tr><td>09</td><td>Real-time delivery</td><td>Qualified leads pushed to your shared sheet the moment they come in.</td></tr><tr><td>10</td><td>Performance reporting</td><td>Weekly brief with lead quality breakdown. Not just volume, so you know what the ads are actually doing.</td></tr>
-        </tbody></table>
-
-        <div class="sec">Monthly Pricing</div>
-        <div class="pb">
-          <div class="pb-hdr">
-            <span class="pb-lbl">Pricing breakdown</span>
-            <span class="pb-lbl">30-day flight</span>
-          </div>
-          <div class="pb-body">
-            <div class="pr">
-              <div><div class="pr-name">Meta ad spend (100% pass-through)</div><div class="pr-note">Goes to Meta, invoiced at cost</div></div>
-              <div class="pr-amt">AED 42,273</div>
-            </div>
-            <div class="pr">
-              <div><div class="pr-name">Nuhai base fee</div><div class="pr-note">Fixed. Systems, compliance, reporting.</div></div>
-              <div class="pr-amt">AED 3,500</div>
-            </div>
-            <div class="pr">
-              <div><div class="pr-name">Ad management (10% of ad spend)</div><div class="pr-note">Scales with optimisation workload</div></div>
-              <div class="pr-amt">AED 4,227</div>
-            </div>
-            <div class="p-div"></div>
-            <div class="p-total-row">
-              <div><div class="p-tl">Monthly total</div><div class="p-tn">No onboarding fee. No hidden costs.</div></div>
-              <div class="p-total-right"><div class="p-ta">AED 50,000</div><div class="p-tp">ad spend plus all Nuhai work</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="page" id="pg-tier-C">
-      <div class="q-wrap">
-        <div class="q-tier-badge tier-c"><span class="dot"></span>Tier C · Scale</div>
-        <h1 class="q-big-title"><em>Scale</em> · AED 75,000 monthly</h1>
-        <div class="q-subtitle">Deeper spend across Binghatti and Samana with multi-angle creative rotation and full lookalike plus retargeting layer.</div>
-
-        <div class="q-meta-row">
-          <div class="qmc"><div class="qmc-l">Monthly investment</div><div class="qmc-v">AED 75,000</div></div>
-          <div class="qmc"><div class="qmc-l">Ad spend to Meta</div><div class="qmc-v">AED 65,000</div></div>
-          <div class="qmc"><div class="qmc-l">Nuhai fee</div><div class="qmc-v">AED 10,000</div></div>
-          <div class="qmc"><div class="qmc-l">Daily ad budget</div><div class="qmc-v">AED 2,167</div></div>
-        </div>
-
-        <div class="sec">What You Will Receive in 30 Days</div>
-        <div class="commit-grid">
-          <div class="commit-cell">
-            <div class="commit-cell-label">Raw leads expected</div>
-            <div class="commit-cell-number">~425</div>
-            <div class="commit-cell-sub"><strong>Everyone</strong> who submitted the form through your ads. Includes curious scrollers, wrong-number fills, and duplicates.</div>
-          </div>
-          <div class="commit-cell commit-cell-featured">
-            <div class="commit-cell-label">Qualified leads we commit</div>
-            <div class="commit-cell-number">225</div>
-            <div class="commit-cell-sub"><strong>Worth calling</strong>. Valid UAE phone, budget matches the tier's target range, not a duplicate of the last 90 days.</div>
-          </div>
-        </div>
-
-        <div class="sec">Services Included</div>
-        <table class="dt"><tbody>
-          <tr><td>01</td><td>Audience intelligence</td><td>Buyer profiles built from live Dubai market signal, layered with behavioural triggers specific to your developer hooks.</td></tr><tr><td>02</td><td>Creative system</td><td>Multi-angle ad library produced and iterated across the flight. Not a single set-and-forget ad.</td></tr><tr><td>03</td><td>Multilingual copy</td><td>Every ad shipped in English and Arabic, hedged for UAE real-estate advertising rules.</td></tr><tr><td>04</td><td>Compliance layer</td><td>RERA BRN, Trakheesi permit number, escrow disclosure and payment-plan disclaimers built into every ad.</td></tr><tr><td>05</td><td>Meta Business integration</td><td>Server-side tracking (Conversions API), Pixel install, Lead Ads form with qualification fields, Business Manager setup.</td></tr><tr><td>06</td><td>Quality-trained audiences</td><td>Lookalike audiences seeded from qualified leads only, not from raw form fills. Keeps the signal pure.</td></tr><tr><td>07</td><td>Daily optimisation</td><td>Bid, budget, audience and creative tuned every day, not weekly. Lost hours cost leads.</td></tr><tr><td>08</td><td>Lead qualification</td><td>Valid-phone check, budget match, and duplicate filtering before a lead lands in your sheet.</td></tr><tr><td>09</td><td>Real-time delivery</td><td>Qualified leads pushed to your shared sheet the moment they come in.</td></tr><tr><td>10</td><td>Performance reporting</td><td>Weekly brief with lead quality breakdown. Not just volume, so you know what the ads are actually doing.</td></tr>
-        </tbody></table>
-
-        <div class="sec">Monthly Pricing</div>
-        <div class="pb">
-          <div class="pb-hdr">
-            <span class="pb-lbl">Pricing breakdown</span>
-            <span class="pb-lbl">30-day flight</span>
-          </div>
-          <div class="pb-body">
-            <div class="pr">
-              <div><div class="pr-name">Meta ad spend (100% pass-through)</div><div class="pr-note">Goes to Meta, invoiced at cost</div></div>
-              <div class="pr-amt">AED 65,000</div>
-            </div>
-            <div class="pr">
-              <div><div class="pr-name">Nuhai base fee</div><div class="pr-note">Fixed. Systems, compliance, reporting.</div></div>
-              <div class="pr-amt">AED 3,500</div>
-            </div>
-            <div class="pr">
-              <div><div class="pr-name">Ad management (10% of ad spend)</div><div class="pr-note">Scales with optimisation workload</div></div>
-              <div class="pr-amt">AED 6,500</div>
-            </div>
-            <div class="p-div"></div>
-            <div class="p-total-row">
-              <div><div class="p-tl">Monthly total</div><div class="p-tn">No onboarding fee. No hidden costs.</div></div>
-              <div class="p-total-right"><div class="p-ta">AED 75,000</div><div class="p-tp">ad spend plus all Nuhai work</div></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <div class="page" id="pg-compare">
       <div class="comp-wrap">
         <div class="comp-title">Tier <em>Comparison</em></div>
         <div class="comp-sub">Side by side. The committed number is the qualified-lead count per tier.</div>
         <div class="ct-wrap"><table class="ct">
           <thead>
-            <tr><th></th><th class="ca">Tier A · Calibrate</th><th class="cb">Tier B · Run</th><th class="cc">Tier C · Scale</th></tr>
+            <tr><th></th><th class="ca">Tier A · Pilot</th><th class="cb">Tier B · Calibrate</th></tr>
           </thead>
           <tbody>
-            <tr><td>Monthly investment</td><td>AED 30,000</td><td>AED 50,000</td><td>AED 75,000</td></tr>
-            <tr><td>Ad spend to Meta</td><td>AED 24,091</td><td>AED 42,273</td><td>AED 65,000</td></tr>
-            <tr><td>Developers represented</td><td>Binghatti</td><td>Binghatti + Samana</td><td>Binghatti + Samana</td></tr>
-            <tr><td>Ad sets running</td><td>2</td><td>4</td><td>6</td></tr>
-            <tr><td>Raw leads expected</td><td>~125</td><td>~260</td><td>~425</td></tr>
-            <tr class="featured-row"><td>Qualified leads committed</td><td><strong>55</strong></td><td><strong>130</strong></td><td><strong>225</strong></td></tr>
-            <tr><td>Lookalike audience layer</td><td class="cn">·</td><td class="cy">✓</td><td class="cy">✓ (1% and 5%)</td></tr>
-            <tr><td>Retargeting layer</td><td class="cn">·</td><td class="cy">✓</td><td class="cy">✓ (full)</td></tr>
-            <tr><td>Multi-language creative</td><td class="cy">EN + AR</td><td class="cy">EN + AR</td><td class="cy">EN + AR</td></tr>
+            <tr><td>Monthly investment</td><td>AED 20,000</td><td>AED 30,000</td></tr>
+            <tr><td>Ad spend to Meta</td><td>AED 15,000</td><td>AED 24,091</td></tr>
+            <tr><td>Developers represented</td><td>Binghatti</td><td>Binghatti</td></tr>
+            <tr><td>Ad sets running</td><td>1</td><td>2</td></tr>
+            <tr><td>Raw leads expected</td><td>~75</td><td>~125</td></tr>
+            <tr class="featured-row"><td>Qualified leads committed</td><td><strong>30</strong></td><td><strong>55</strong></td></tr>
+            <tr><td>Lookalike audience layer</td><td><span class="cn">·</span></td><td><span class="cy">✓</span></td></tr>
+            <tr><td>Retargeting layer</td><td><span class="cn">·</span></td><td><span class="cy">✓</span></td></tr>
+            <tr><td>Multi-language creative</td><td><span class="cy">EN + AR</span></td><td><span class="cy">EN + AR</span></td></tr>
           </tbody>
         </table></div>
         <p class="q-small-body" style="margin-top:20px">We commit on qualified leads. Raw leads are shown for context. Volume matters less than whether they pick up the phone.</p>
@@ -803,7 +722,7 @@ a{color:var(--accent);text-decoration:none}
             <div class="sig-line"></div>
             <div class="sig-name">Nuhai Properties</div>
             <div class="sig-role">Marketing and lead-gen layer</div>
-            <div class="sig-date">21 Apr 2026</div>
+            <div class="sig-date">26 Apr 2026</div>
           </div>
           <div class="sig-col">
             <div class="sig-lbl">Agreed by Lina Al Sahori</div>
