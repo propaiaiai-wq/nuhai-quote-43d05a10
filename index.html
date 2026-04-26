@@ -224,6 +224,10 @@ a{color:var(--accent);text-decoration:none}
   line-height:1;letter-spacing:-0.03em;
 }
 .tc-price-sub{font-family:var(--font-body);font-size:12px;color:var(--text-mut);margin-left:6px;font-weight:300}
+.tc-vat-note{
+  font-family:var(--font-body);font-size:10px;color:var(--text-mut);
+  margin-top:6px;font-weight:300;letter-spacing:0.04em;
+}
 .tc-scope{font-family:var(--font-body);font-size:10.5px;color:var(--text-mid);margin:8px 0 16px;font-weight:300;letter-spacing:0.04em}
 .tc-divider{height:1px;background:var(--line);margin:14px 0}
 .tc-big-metric{padding:14px 0 10px}
@@ -232,7 +236,7 @@ a{color:var(--accent);text-decoration:none}
   font-weight:500;text-transform:uppercase;margin-bottom:8px;
 }
 .tc-big-number{
-  font-family:var(--font-head);font-size:52px;font-weight:200;line-height:1;letter-spacing:-0.04em;
+  font-family:var(--font-head);font-size:46px;font-weight:200;line-height:1;letter-spacing:-0.04em;
 }
 .tier-card-a .tc-big-number{color:var(--gray)}
 .tier-card-b .tc-big-number{color:var(--accent);text-shadow:0 0 28px var(--accent50)}
@@ -259,7 +263,7 @@ a{color:var(--accent);text-decoration:none}
 }
 .commit-cell-featured .commit-cell-label{color:var(--accent)}
 .commit-cell-number{
-  font-family:var(--font-head);font-size:60px;font-weight:200;line-height:1;
+  font-family:var(--font-head);font-size:54px;font-weight:200;line-height:1;
   letter-spacing:-0.04em;color:var(--text);
 }
 .commit-cell-featured .commit-cell-number{color:var(--accent);text-shadow:0 0 28px var(--accent50)}
@@ -323,7 +327,7 @@ a{color:var(--accent);text-decoration:none}
 .ct td:first-child{color:var(--text-mid)}
 .ct tr.featured-row td{background:var(--accent10);color:var(--accent);font-weight:500}
 .ct tr.featured-row td:first-child{color:var(--text)}
-.ct tr.featured-row td strong{color:var(--accent);font-family:var(--font-head);font-size:22px;font-weight:300;text-shadow:0 0 16px var(--accent35)}
+.ct tr.featured-row td strong{color:var(--accent);font-family:var(--font-head);font-size:18px;font-weight:300;text-shadow:0 0 16px var(--accent35)}
 .ct tr:last-child td{border:none}
 .ct tr:not(.featured-row):hover td{background:rgba(255,255,255,0.03)}
 .cy{color:var(--accent)}
@@ -354,7 +358,6 @@ a{color:var(--accent);text-decoration:none}
   .commit-grid{grid-template-columns:1fr}
   .tg{grid-template-columns:1fr!important}
   .sig{grid-template-columns:1fr;gap:28px}
-  /* Comparison table: horizontal scroll */
   .ct-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -24px;padding:0 24px}
   .ct{min-width:560px}
 }
@@ -364,7 +367,6 @@ a{color:var(--accent);text-decoration:none}
   html,body{overflow-x:hidden}
   body{font-size:12.5px}
 
-  /* Tabs: horizontal scroll, single row, preserved navigation */
   #tabs{
     padding:0 14px;height:52px;gap:0;flex-wrap:nowrap;
     overflow-x:auto;overflow-y:hidden;
@@ -382,13 +384,11 @@ a{color:var(--accent);text-decoration:none}
     flex-shrink:0;
   }
 
-  /* One page at a time — same as desktop */
   .page{display:none;padding-top:52px}
   .page.on{display:block}
 
   .q-wrap,.comp-wrap{padding:28px 18px 40px;max-width:100%}
 
-  /* Header — stack and strip left accent overhang */
   .q-header{flex-direction:column;align-items:flex-start;gap:18px;padding-bottom:28px;margin-bottom:28px}
   .q-header::before{display:none}
   .q-from{gap:12px}
@@ -396,38 +396,31 @@ a{color:var(--accent);text-decoration:none}
   .q-to-block{text-align:left;max-width:100%}
   .q-to-name{font-size:19px}
 
-  /* Typography scale down */
   .q-headline{font-size:clamp(26px,8.5vw,38px);line-height:1.1;letter-spacing:-0.025em}
   .q-big-title{font-size:clamp(24px,7.5vw,34px);line-height:1.12}
   .comp-title{font-size:clamp(26px,7.5vw,36px)}
   .q-intro,.q-subtitle,.q-small-body,.comp-sub{font-size:12px;line-height:1.75}
 
-  /* Section header: smaller line */
   .sec{margin:32px 0 14px;font-size:8.5px;letter-spacing:3px;gap:10px}
   .sec::before{width:14px}
 
-  /* Meta rows — 1 col on tight screens */
   .q-meta-row,.q-meta-row-3{grid-template-columns:1fr}
   .qmc{padding:14px 16px}
 
-  /* Tier cards */
   .tier-cards{gap:14px}
   .tier-card{padding:20px 20px 18px}
   .tc-price{font-size:34px}
-  .tc-big-number{font-size:44px}
+  .tc-big-number{font-size:38px}
   .tc-metric{flex-direction:column;align-items:flex-start;gap:4px}
 
-  /* Commit cells */
   .commit-cell{padding:20px 20px}
-  .commit-cell-number{font-size:48px}
+  .commit-cell-number{font-size:42px}
 
-  /* Services table — tighter */
   .dt td{padding:12px 10px;font-size:10.5px}
   .dt td:first-child{width:24px;font-size:8.5px}
   .dt td:nth-child(2){width:auto;font-size:11px}
   .dt td:nth-child(3){font-size:10.5px}
 
-  /* Pricing breakdown — stack rows cleanly */
   .pb-body{padding:16px 18px}
   .pr{flex-direction:column;align-items:flex-start;gap:4px;padding:12px 0}
   .pr-amt{font-size:16px;align-self:flex-end}
@@ -435,21 +428,17 @@ a{color:var(--accent);text-decoration:none}
   .p-total-right{text-align:left}
   .p-ta{font-size:36px}
 
-  /* Comparison table — horizontal scroll wrapper */
   .ct-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -18px;padding:0 18px 6px;border-radius:0}
   .ct{min-width:480px;font-size:10.5px}
   .ct th,.ct td{padding:12px 14px;font-size:10.5px}
-  .ct tr.featured-row td strong{font-size:18px}
+  .ct tr.featured-row td strong{font-size:16px}
 
-  /* NDA bullet list */
   .kill-criteria li{padding:10px 14px;font-size:10.5px}
 
-  /* Signatures */
   .sig{margin-top:36px;padding-top:28px;gap:24px}
   .sig-col{padding:16px;background:var(--bg-card);border-radius:3px;border:1px solid var(--line)}
   .sig-lbl{margin-bottom:22px}
 
-  /* Footer */
   .q-foot{margin-top:32px;font-size:8.5px;letter-spacing:3px}
 }
 
@@ -464,7 +453,7 @@ a{color:var(--accent);text-decoration:none}
   .ct th,.pb-hdr{background:#eee!important;color:#222!important}
   .ct td{color:#222!important}
   .qmc-v,.pr-name,.p-tl,.tc-big-number,.commit-cell-number,.tg-v,.sig-name{color:#111!important;text-shadow:none!important}
-  .qmc-l,.pb-lbl,.pr-note,.p-tn,.tc-big-label,.commit-cell-label,.tg-l,.sec,.sig-lbl,.tc-big-sub{color:#555!important}
+  .qmc-l,.pb-lbl,.pr-note,.p-tn,.tc-big-label,.commit-cell-label,.tg-l,.sec,.sig-lbl,.tc-big-sub,.tc-vat-note{color:#555!important}
   .q-headline em,.q-big-title em,.p-ta,.commit-cell-featured .commit-cell-number,.tier-card-b .tc-big-number{color:#0a8585!important;text-shadow:none!important}
   .logo-img{filter:none!important}
 }
@@ -506,7 +495,7 @@ a{color:var(--accent);text-decoration:none}
         <div class="q-meta-row q-meta-row-3">
           <div class="qmc"><div class="qmc-l">Flight</div><div class="qmc-v">30 days</div></div>
           <div class="qmc"><div class="qmc-l">Platform</div><div class="qmc-v">Meta only</div></div>
-          <div class="qmc"><div class="qmc-l">Fee structure</div><div class="qmc-v">AED 3,500 + 10%</div></div>
+          <div class="qmc"><div class="qmc-l">Fee structure</div><div class="qmc-v">AED 3,500 + 10% + 5% VAT</div></div>
         </div>
 
         <div class="sec">Choose Your Tier</div>
@@ -515,32 +504,37 @@ a{color:var(--accent);text-decoration:none}
               <div class="tier-card tier-card-a">
                 <div class="tc-badge"><span class="dot"></span>Tier A · Pilot</div>
                 <div class="tc-price">AED 20,000<span class="tc-price-sub">/mo</span></div>
+                <div class="tc-vat-note">+ 5% VAT · total AED 21,000/mo</div>
                 <div class="tc-scope">Binghatti · 1 ad set</div>
                 <div class="tc-divider"></div>
                 <div class="tc-big-metric">
-                  <div class="tc-big-label">Qualified leads we commit to</div>
-                  <div class="tc-big-number">30</div>
+                  <div class="tc-big-label">Predicted qualified leads</div>
+                  <div class="tc-big-number">30–40</div>
                   <div class="tc-big-sub">in 30 days · valid phone, budget match, not duplicate</div>
                 </div>
-                <div class="tc-metric"><span>Raw leads expected <em>(all form submissions)</em></span><b>~75</b></div>
+                <div class="tc-metric"><span>Raw leads expected <em>(all form submissions)</em></span><b>75–90</b></div>
               </div>
               <div class="tier-card tier-card-b">
                 <div class="tc-badge"><span class="dot"></span>Tier B · Calibrate</div>
                 <div class="tc-price">AED 30,000<span class="tc-price-sub">/mo</span></div>
+                <div class="tc-vat-note">+ 5% VAT · total AED 31,500/mo</div>
                 <div class="tc-scope">Binghatti · 2 ad sets</div>
                 <div class="tc-divider"></div>
                 <div class="tc-big-metric">
-                  <div class="tc-big-label">Qualified leads we commit to</div>
-                  <div class="tc-big-number">55</div>
+                  <div class="tc-big-label">Predicted qualified leads</div>
+                  <div class="tc-big-number">55–70</div>
                   <div class="tc-big-sub">in 30 days · valid phone, budget match, not duplicate</div>
                 </div>
-                <div class="tc-metric"><span>Raw leads expected <em>(all form submissions)</em></span><b>~125</b></div>
+                <div class="tc-metric"><span>Raw leads expected <em>(all form submissions)</em></span><b>130–150</b></div>
               </div>
         </div>
 
         <div class="sec">What "Qualified" Actually Means</div>
         <p class="q-small-body">A qualified lead is a real human with a valid UAE-reachable phone number who matched the budget window of the campaign in their form submission, and is not a duplicate of a recent submission. We filter the rest out on our side. You only see the ones worth calling.</p>
-        <p class="q-small-body"><strong>Raw leads</strong> are everyone who submitted the form. <strong>Qualified leads</strong> are the subset we commit to: the ones with a real reachable phone, the right budget, and no recent duplicate. Calling a qualified lead is how you turn the ad spend into a conversation; calling a raw lead is a coin flip.</p>
+        <p class="q-small-body"><strong>Raw leads</strong> are everyone who submitted the form. <strong>Qualified leads</strong> are the subset that pass our filter: real reachable phone, right budget, no recent duplicate. Calling a qualified lead is how you turn the ad spend into a conversation; calling a raw lead is a coin flip.</p>
+
+        <div class="sec">How the Range Is Built</div>
+        <p class="q-small-body">The numbers above are a <strong>predicted outcome range</strong>, not a fixed promise. We run a 10,000-draw simulation against our priors for cost-per-lead and qualification rate in this segment, and we show you the realistic middle band of that distribution. Lower end and upper end are both honest: most flights land inside the range, some land below, some land above. Once we have one full month of measured priors, the range tightens.</p>
 
         <div class="sec">How Leads Reach You</div>
         <p class="q-small-body">Every qualified lead is written to a shared Google Sheet the moment it comes in, with the contact details, budget, developer interest, and timestamp. You own the outreach, the pace, and the script. We do not contact your leads ourselves.</p>
@@ -560,19 +554,20 @@ a{color:var(--accent);text-decoration:none}
           <div class="qmc"><div class="qmc-l">Daily ad budget</div><div class="qmc-v">AED 500</div></div>
         </div>
 
-        <div class="sec">What You Will Receive in 30 Days</div>
+        <div class="sec">Predicted Outcome (30 days)</div>
         <div class="commit-grid">
           <div class="commit-cell">
             <div class="commit-cell-label">Raw leads expected</div>
-            <div class="commit-cell-number">~75</div>
+            <div class="commit-cell-number">75–90</div>
             <div class="commit-cell-sub"><strong>Everyone</strong> who submitted the form through your ads. Includes curious scrollers, wrong-number fills, and duplicates.</div>
           </div>
           <div class="commit-cell commit-cell-featured">
-            <div class="commit-cell-label">Qualified leads we commit</div>
-            <div class="commit-cell-number">30</div>
+            <div class="commit-cell-label">Predicted qualified leads</div>
+            <div class="commit-cell-number">30–40</div>
             <div class="commit-cell-sub"><strong>Worth calling</strong>. Valid UAE phone, budget matches the tier's target range, not a duplicate of the last 90 days.</div>
           </div>
         </div>
+        <p class="q-small-body" style="margin-top:6px"><em>Range</em> is the realistic middle band (P25–P75) of a 10,000-draw simulation against industry priors for Dubai off-plan low-ticket campaigns. Most flights land inside it. Some land lower; some land higher.</p>
 
         <div class="sec">Services Included</div>
         <table class="dt"><tbody>
@@ -599,9 +594,18 @@ a{color:var(--accent);text-decoration:none}
               <div class="pr-amt">AED 1,500</div>
             </div>
             <div class="p-div"></div>
+            <div class="pr">
+              <div><div class="pr-name">Subtotal</div><div class="pr-note">Ad spend + Nuhai fee</div></div>
+              <div class="pr-amt">AED 20,000</div>
+            </div>
+            <div class="pr">
+              <div><div class="pr-name">UAE VAT (5%)</div><div class="pr-note">Applied on subtotal as required by FTA</div></div>
+              <div class="pr-amt">AED 1,000</div>
+            </div>
+            <div class="p-div"></div>
             <div class="p-total-row">
-              <div><div class="p-tl">Monthly total</div><div class="p-tn">No onboarding fee. No hidden costs.</div></div>
-              <div class="p-total-right"><div class="p-ta">AED 20,000</div><div class="p-tp">ad spend plus all Nuhai work</div></div>
+              <div><div class="p-tl">Monthly total (incl. VAT)</div><div class="p-tn">No onboarding fee. No hidden costs.</div></div>
+              <div class="p-total-right"><div class="p-ta">AED 21,000</div><div class="p-tp">ad spend, all Nuhai work, and 5% VAT</div></div>
             </div>
           </div>
         </div>
@@ -621,19 +625,20 @@ a{color:var(--accent);text-decoration:none}
           <div class="qmc"><div class="qmc-l">Daily ad budget</div><div class="qmc-v">AED 803</div></div>
         </div>
 
-        <div class="sec">What You Will Receive in 30 Days</div>
+        <div class="sec">Predicted Outcome (30 days)</div>
         <div class="commit-grid">
           <div class="commit-cell">
             <div class="commit-cell-label">Raw leads expected</div>
-            <div class="commit-cell-number">~125</div>
+            <div class="commit-cell-number">130–150</div>
             <div class="commit-cell-sub"><strong>Everyone</strong> who submitted the form through your ads. Includes curious scrollers, wrong-number fills, and duplicates.</div>
           </div>
           <div class="commit-cell commit-cell-featured">
-            <div class="commit-cell-label">Qualified leads we commit</div>
-            <div class="commit-cell-number">55</div>
+            <div class="commit-cell-label">Predicted qualified leads</div>
+            <div class="commit-cell-number">55–70</div>
             <div class="commit-cell-sub"><strong>Worth calling</strong>. Valid UAE phone, budget matches the tier's target range, not a duplicate of the last 90 days.</div>
           </div>
         </div>
+        <p class="q-small-body" style="margin-top:6px"><em>Range</em> is the realistic middle band (P25–P75) of a 10,000-draw simulation against industry priors for Dubai off-plan low-ticket campaigns. Most flights land inside it. Some land lower; some land higher.</p>
 
         <div class="sec">Services Included</div>
         <table class="dt"><tbody>
@@ -660,9 +665,18 @@ a{color:var(--accent);text-decoration:none}
               <div class="pr-amt">AED 2,409</div>
             </div>
             <div class="p-div"></div>
+            <div class="pr">
+              <div><div class="pr-name">Subtotal</div><div class="pr-note">Ad spend + Nuhai fee</div></div>
+              <div class="pr-amt">AED 30,000</div>
+            </div>
+            <div class="pr">
+              <div><div class="pr-name">UAE VAT (5%)</div><div class="pr-note">Applied on subtotal as required by FTA</div></div>
+              <div class="pr-amt">AED 1,500</div>
+            </div>
+            <div class="p-div"></div>
             <div class="p-total-row">
-              <div><div class="p-tl">Monthly total</div><div class="p-tn">No onboarding fee. No hidden costs.</div></div>
-              <div class="p-total-right"><div class="p-ta">AED 30,000</div><div class="p-tp">ad spend plus all Nuhai work</div></div>
+              <div><div class="p-tl">Monthly total (incl. VAT)</div><div class="p-tn">No onboarding fee. No hidden costs.</div></div>
+              <div class="p-total-right"><div class="p-ta">AED 31,500</div><div class="p-tp">ad spend, all Nuhai work, and 5% VAT</div></div>
             </div>
           </div>
         </div>
@@ -672,24 +686,26 @@ a{color:var(--accent);text-decoration:none}
     <div class="page" id="pg-compare">
       <div class="comp-wrap">
         <div class="comp-title">Tier <em>Comparison</em></div>
-        <div class="comp-sub">Side by side. The committed number is the qualified-lead count per tier.</div>
+        <div class="comp-sub">Side by side. Lead numbers are predicted ranges (P25–P75) from a 10,000-draw simulation.</div>
         <div class="ct-wrap"><table class="ct">
           <thead>
             <tr><th></th><th class="ca">Tier A · Pilot</th><th class="cb">Tier B · Calibrate</th></tr>
           </thead>
           <tbody>
-            <tr><td>Monthly investment</td><td>AED 20,000</td><td>AED 30,000</td></tr>
+            <tr><td>Monthly investment (ex VAT)</td><td>AED 20,000</td><td>AED 30,000</td></tr>
+            <tr><td>UAE VAT (5%)</td><td>AED 1,000</td><td>AED 1,500</td></tr>
+            <tr><td>Monthly total (incl. VAT)</td><td>AED 21,000</td><td>AED 31,500</td></tr>
             <tr><td>Ad spend to Meta</td><td>AED 15,000</td><td>AED 24,091</td></tr>
             <tr><td>Developers represented</td><td>Binghatti</td><td>Binghatti</td></tr>
             <tr><td>Ad sets running</td><td>1</td><td>2</td></tr>
-            <tr><td>Raw leads expected</td><td>~75</td><td>~125</td></tr>
-            <tr class="featured-row"><td>Qualified leads committed</td><td><strong>30</strong></td><td><strong>55</strong></td></tr>
+            <tr><td>Predicted raw leads</td><td>75–90</td><td>130–150</td></tr>
+            <tr class="featured-row"><td>Predicted qualified leads</td><td><strong>30–40</strong></td><td><strong>55–70</strong></td></tr>
             <tr><td>Lookalike audience layer</td><td><span class="cn">·</span></td><td><span class="cy">✓</span></td></tr>
             <tr><td>Retargeting layer</td><td><span class="cn">·</span></td><td><span class="cy">✓</span></td></tr>
             <tr><td>Multi-language creative</td><td><span class="cy">EN + AR</span></td><td><span class="cy">EN + AR</span></td></tr>
           </tbody>
         </table></div>
-        <p class="q-small-body" style="margin-top:20px">We commit on qualified leads. Raw leads are shown for context. Volume matters less than whether they pick up the phone.</p>
+        <p class="q-small-body" style="margin-top:20px">We do not commit to a single hard number on leads. The range is what our model says is the realistic middle band; the actual outcome depends on creative resonance, season, and the live cost of attention on Meta during the flight.</p>
       </div>
     </div>
 
@@ -698,7 +714,7 @@ a{color:var(--accent);text-decoration:none}
         <div class="sec">Engagement and Payment</div>
         <div class="tg">
           <div class="tg-c"><div class="tg-l">Engagement</div><div class="tg-v">Month to month. 30-day termination notice either side. Either of you can pause at any month boundary.</div></div>
-          <div class="tg-c"><div class="tg-l">Payment</div><div class="tg-v">Invoiced monthly in advance. Ad spend is pass-through with Meta billing attached for transparency.</div></div>
+          <div class="tg-c"><div class="tg-l">Payment</div><div class="tg-v">Invoiced monthly in advance. Ad spend is pass-through with Meta billing attached for transparency. UAE VAT 5% applied on the full invoice.</div></div>
           <div class="tg-c"><div class="tg-l">Tier changes</div><div class="tg-v">Move between tiers with 7 days notice. Mid-month changes prorated against days remaining.</div></div>
         </div>
 
@@ -713,8 +729,11 @@ a{color:var(--accent);text-decoration:none}
         </ul>
         <p class="q-small-body">This confidentiality obligation applies during the engagement and for <strong>24 months after</strong> termination. Permitted disclosures: (a) to a party's own legal, tax, or financial advisors bound by equivalent confidentiality; (b) where required by a UAE regulator or court order, with prompt written notice to the other party; (c) information that enters the public domain through no breach by the receiving party. Sharing campaign figures, methodology, or this quote with any third party (including other brokerages or competing agencies) without Nuhai's written consent is a material breach and will result in immediate engagement termination.</p>
 
+        <div class="sec">Force Majeure</div>
+        <p class="q-small-body">Neither party is liable for delay or failure to perform caused by events beyond reasonable control, including: war, civil unrest, terrorism, or sanctions; natural disasters, fire, flood, sandstorm, or extreme weather; government order or regulatory ban affecting real-estate advertising in the UAE; outage of Meta, internet, or other essential third-party platforms exceeding 24 hours; pandemic or public-health emergency. The affected party will give prompt written notice describing the event and its expected duration. If the event continues for more than <strong>14 calendar days</strong>, either party may terminate this engagement on written notice with no further liability beyond ad spend already disbursed to Meta and Nuhai fees pro-rated to the day the event began.</p>
+
         <div class="sec">What You Own, Not Us</div>
-        <p class="q-small-body">Once a qualified lead lands in your sheet, it is yours. We do not commit to site visits, closing rates, or deal counts. Those outcomes depend on how you work the lead, and we do not want to take credit or blame for work we do not do. We bring the buyers to your door. You turn them into signatures.</p>
+        <p class="q-small-body">Once a qualified lead lands in your sheet, it is yours. We do not promise site visits, closing rates, or deal counts. Those outcomes depend on how you work the lead, and we do not want to take credit or blame for work we do not do. We bring the buyers to your door. You turn them into signatures.</p>
 
         <div class="sig">
           <div class="sig-col">
